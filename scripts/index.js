@@ -1,4 +1,3 @@
-
 const booksList = document.querySelector('#book-list');
 let booklist = [];
 let bookHtml = '';
