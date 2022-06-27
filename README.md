@@ -33,6 +33,9 @@ After cloning the repository, open it on VS code or any code editor of your your
 - Twitter: [@twitterhandle](https://twitter.com/RehemaMwaka1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/mwlite/in/rehema-mwaka-48a1801ab)
 
+👤 **Henry Karamaga**
+
+
 
 ## 🤝 Contributing
 
