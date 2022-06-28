@@ -1,56 +1,41 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
-> Description the project.
-
+# Awesome-Books
+Personal library which allow user to add name of the book and at the same time with the name of the author. User is able to Add new book and Delete book. This app allows user to store all changes in Local storage so user can be able to see his/her stored data anytime.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+- HTML
+- CSS
+- Javascript
 
 
-## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+## Live Demo
+
+[Live Demo Link](https://tekyrey.github.io/Awesome-Books)
 
 
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- VS CODE
 
 ### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+Clone the repository using the command "git clone https://github.com/TekyRey/Awesome-Books.git" in your local machine
+After cloning the repository, open it on VS code or any code editor of your your choice, move into the folder you cloned into and open the index.html file using your browser
 
 ## Authors
 
-👤 **Author1**
+👤 **Rehema Mwaka**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/TekyRey)
+- Twitter: [@twitterhandle](https://twitter.com/RehemaMwaka1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/mwlite/in/rehema-mwaka-48a1801ab)
 
-👤 **Author2**
+👤 **karamaga**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@henrykgggg ](https://github.com/henrykgggg)
+- Twitter: [@karamaga1](https://twitter.com/karamaga1)
+- LinkedIn: [@karamaga henrie](https://www.linkedin.com/in/karamaga-henrie-35a539232/)
 
 ## 🤝 Contributing
 
@@ -64,9 +49,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 ## 📝 License
 
