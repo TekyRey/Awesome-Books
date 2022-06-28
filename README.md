@@ -34,7 +34,7 @@ After cloning the repository, open it on VS code or any code editor of your your
 👤 **karamaga**
 
 - GitHub: [@henrykgggg ](https://github.com/henrykgggg)
-- Twitter: [@karamaga1]
+- Twitter: [@karamaga1](https://twitter.com/karamaga1)
 - LinkedIn: [@karamaga henrie](https://www.linkedin.com/in/karamaga-henrie-35a539232/)
 
 ## 🤝 Contributing
