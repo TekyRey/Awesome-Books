@@ -1,8 +1,6 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Conference Page
-
-> Book Records app
+# Awesome-Books
+Personal library which allow user to add name of the book and at the same time with the name of the author. User is able to Add new book and Delete book. This app allows user to store all changes in Local storage so user can be able to see his/her stored data anytime.
 
 ## Built With
 
@@ -14,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://tekyrey.github.io/Conference-Page/)
+[Live Demo Link]()
 
 
 
@@ -33,6 +31,11 @@ After cloning the repository, open it on VS code or any code editor of your your
 - Twitter: [@twitterhandle](https://twitter.com/RehemaMwaka1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/mwlite/in/rehema-mwaka-48a1801ab)
 
+👤 **karamaga**
+
+- GitHub: [@henrykgggg ](https://github.com/henrykgggg)
+- Twitter: [@karamaga1]
+- LinkedIn: [@karamaga henrie](https://www.linkedin.com/in/karamaga-henrie-35a539232/)
 
 ## 🤝 Contributing
 
