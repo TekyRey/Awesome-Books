@@ -49,11 +49,16 @@ class Book {
 
     const obj = JSON.parse(localStorage.getItem("books"));
     //set obj to empty
-    obj.allbook = [];
-    obj.allbook.push({
-      title: this.title,
-      author: this.author,
-    });
+      obj.allbook = [];
+      //push new book to obj
+
+      
+      if (this.title.value !== "" && this.author.value !== "") {
+          obj.allbook.push({
+              title: this.title,
+              author: this.author,
+          });
+      }
     localStorage.setItem("books", JSON.stringify(obj));
   }
   static removeBook(title) {
