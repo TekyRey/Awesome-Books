@@ -5,14 +5,7 @@
 }
 
 body {
-<<<<<<< HEAD
-    /* background-image: linear-gradient(120deg,#f6d365 ,#fda085); */
-    background-image: url("https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5dc34c7d51595b4e9ca53745_path-5185.svg");
-    color: #fff;
-    font-family: "poppins",sans-serif;
-=======
   font-family: "poppins", sans-serif;
->>>>>>> dad73c29f6793469c41943705958030428bf039e
 }
 
 .container {
@@ -28,5 +21,11 @@ body {
 #book-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
 }
