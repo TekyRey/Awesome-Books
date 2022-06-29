@@ -1,41 +1,39 @@
-const bookForm = document.querySelector('#book-form');
-const bookTitle = document.querySelector('#title');
-const bookAuthor = document.querySelector('#author');
-const booksList = document.querySelector('#book-list');
+const bookForm = document.querySelector("#book-form");
+const bookTitle = document.querySelector("#title");
+const bookAuthor = document.querySelector("#author");
+const booksList = document.querySelector("#book-list");
 
 //create a class book with add remove add display methods
-  class Store {
-    static getBooks() {
-      let books;
-      if (localStorage.getItem('books') === null) {
-        books = [];
-      } else {
-        books = JSON.parse(localStorage.getItem('books'));
-      }
-
-      return books;
+class Store {
+  static getBooks() {
+    let books;
+    if (localStorage.getItem("books") === null) {
+      books = [];
+    } else {
+      books = JSON.parse(localStorage.getItem("books"));
     }
 
-    static addBook(book) {
-      const books = Store.getBooks();
-      books.push(book);
-      localStorage.setItem('books', JSON.stringify(books));
-    }
-
-    static removeBook(title) {
-      const books = Store.getBooks();
-
-      books.forEach((book, index) => {
-        if (book.title === title) {
-          books.splice(index, 1);
-        }
-      });
-
-      localStorage.setItem("books", JSON.stringify(books));
-    }
-   
+    return books;
   }
 
+  static addBook(book) {
+    const books = Store.getBooks();
+    books.push(book);
+    localStorage.setItem("books", JSON.stringify(books));
+  }
+
+  static removeBook(title) {
+    const books = Store.getBooks();
+
+    books.forEach((book, index) => {
+      if (book.title === title) {
+        books.splice(index, 1);
+      }
+    });
+
+    localStorage.setItem("books", JSON.stringify(books));
+  }
+}
 
 class Book {
   constructor(title, author) {
@@ -44,11 +42,11 @@ class Book {
   }
   add() {
     const bookObj = { allbook: [] };
-    if (JSON.parse(localStorage.getItem('books')) == null) {
+    if (JSON.parse(localStorage.getItem("books")) == null) {
       localStorage.setItem("books", JSON.stringify(bookObj));
     }
 
-    const obj = JSON.parse(localStorage.getItem('books'));
+    const obj = JSON.parse(localStorage.getItem("books"));
     //set obj to empty
     obj.allbook = [];
     //push new book to obj
@@ -59,7 +57,7 @@ class Book {
         author: this.author,
       });
     }
-    localStorage.setItem('books', JSON.stringify(obj));
+    localStorage.setItem("books", JSON.stringify(obj));
   }
   static removeBook(title) {
     const books = Store.getBooks();
@@ -87,27 +85,25 @@ class Book {
       el.parentElement.parentElement.remove();
     }
   }
-
 }
 //add event listener to the form
-bookForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const newBook = new Book(bookTitle.value, bookAuthor.value);
-    if(bookTitle.value !== "" && bookAuthor.value !== "") {
+bookForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const newBook = new Book(bookTitle.value, bookAuthor.value);
+  if (bookTitle.value !== "" && bookAuthor.value !== "") {
     newBook.add();
-    author.value = ""
-    title.value = ""
+    author.value = "";
+    title.value = "";
     newBook.display();
-    }
-    else {
-        alert("Please fill in the fields", "danger");
-    }
+  } else {
+    alert("Please fill in the fields", "danger");
+  }
 });
 
-  document.querySelector("#book-list").addEventListener('click', (e) => {
-    Book.deleteBook(e.target);
+document.querySelector("#book-list").addEventListener("click", (e) => {
+  Book.deleteBook(e.target);
 
-    Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
-  });
+  Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
+});
 //add event listener to the remove button
-const removeBtn = document.querySelectorAll('.remove-btn');
+const removeBtn = document.querySelectorAll(".remove-btn");
