@@ -13,7 +13,7 @@ class UI {
     }
   
     static addBookToList(book) {
-      const list = document.querySelector('#book-list');
+      const list = document.querySelector('#book-table');
   
       const row = document.createElement('tr');
   
