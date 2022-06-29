@@ -11,36 +11,42 @@
 </head>
 
     <main>
-        <section class="container">
-        <h1 class="pageTitle">All Books</h1>
-        <div id="books-list">
-            
-        </div>
+        <div class="container-lg ">
+            <div class="card">
+        <h1 class="pageTitle text-center">All Books</h1>
 
-        <hr class="hr"> 
-
-        <div class="formSection">
-            <h1>Awesome Books</h1>
-            <form id=book-form>
-                <input type="text" placeholder="Title" id="title"  class="bookname">
-                <br><br>
-                <input type="text" placeholder="Author" id="author" class="authorname">
-                <br><br>
-                <input type="submit" value="Add" id="submit" class="submitbtn">
-            </form>
-            <table class="table">
+                <table class="table table-stripped table-hover">
                 <thead>
                     <tr>
-                        <th scope="col">Title</th>
-                        <th scope="col">Author</th>
+                        <th scope="col">Book</th>
                         <th scope="col">Delete</th>
                     </tr>
                 <tbody id="book-list">
 
                 </tbody>
             </table>
-       </div>
-    </section>
+<div class="formSection">
+    
+            <form class="row g-3 " id="book-form">
+  
+  <div class="col-sm-4">
+    <label for="title" class="visually-hidden">Title</label>
+    <input type="text" class="form-control" id="title" placeholder="Title" required>
+  </div>
+  <div class="col-sm-4">
+    <label for="author" class="visually-hidden">Author</label>
+    <input type="text" class="form-control" id="author" placeholder="Author" required>
+  </div>
+  <div class="">
+    <button type="submit" id="submit" class="btn btn-primary mb-3">Add Book</button>
+  </div>
+</form>
+</div>
+
+          
+            </div>
+        </div>
+        
 
     </main>
     <!-- <script src="./scripts/index.js"></script> -->
