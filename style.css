@@ -29,3 +29,33 @@ body {
   display: flex;
   justify-content: center;
 }
+
+/* .title {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 23px;
+  font-weight: 800;
+  padding-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ffff;
+  background-image: url("back.jpg");
+}
+.footer {
+  border: 2px solid #ffff;
+  background-image: url("back.jpg");
+  margin-bottom: 20px;
+  padding-top: 7px;
+  padding-left: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+} */
