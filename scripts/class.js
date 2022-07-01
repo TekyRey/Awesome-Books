@@ -2,7 +2,6 @@ const bookForm = document.querySelector('#book-form');
 const bookTitle = document.querySelector('#title');
 const bookAuthor = document.querySelector('#author');
 const booksList = document.querySelector('#book-list');
-// clear local storage
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -25,18 +24,6 @@ class Book {
       });
     }
     localStorage.setItem('books', JSON.stringify(obj));
-  }
-
-  static removeBook(title) {
-    const books = Book.getBooks();
-
-    books.forEach((book, index) => {
-      if (book.title === title) {
-        books.splice(index, 1);
-      }
-    });
-
-    localStorage.setItem('books', JSON.stringify(books));
   }
 
   static deleteBook(el) {
@@ -86,8 +73,6 @@ bookForm.addEventListener('submit', (e) => {
 
 document.querySelector('#book-list').addEventListener('click', (e) => {
   Book.deleteBook(e.target);
-
-  Book.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });
 
 const d = new Date();
