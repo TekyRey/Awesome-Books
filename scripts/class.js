@@ -96,4 +96,52 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
 const d = new Date();
 // const n = d.getFullYear();
 document.getElementById('current_date').innerHTML = d;
+
+const newBook = document.getElementById('newbookLi');
+const myForm = document.getElementById('myForm');
+const myBookList = document.getElementById('bookList');
+const myList = document.getElementById('list');
+const myHome = document.getElementById('home');
+// const myContact = document.getElementById('myContact');
+// const contactNavLink = document.getElementById('contactNavLink');
+
 // add event listener to the remove button
+newBook.addEventListener('click', (e) => {
+  e.preventDefault();
+  myForm.classList.remove('d-none');
+  newBook.classList.add('active');
+  myList.classList.remove('active');
+  myBookList.classList.add('d-none');
+  // contactNavLink.classList.remove('active');
+  // myContact.classList.add('d-none');
+});
+
+myList.addEventListener('click', (e) => {
+  e.preventDefault();
+  myList.classList.add('active');
+  myForm.classList.add('d-none');
+  myBookList.classList.remove('d-none');
+  newBook.classList.remove('active');
+  // contactNavLink.classList.remove('active');
+  // myContact.classList.add('d-none');
+});
+
+myHome.addEventListener('click', (e) => {
+  e.preventDefault();
+  myList.classList.add('active');
+  myForm.classList.add('d-none');
+  myBookList.classList.remove('d-none');
+  newBook.classList.remove('active');
+  // contactNavLink.classList.remove('active');
+  // myContact.classList.add('d-none');
+});
+
+// contactNavLink.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   contactNavLink.classList.add('active');
+//   myForm.classList.add('d-none');
+//   myList.classList.remove('active');
+//   myBookList.classList.add('d-none');
+//   newBook.classList.remove('active');
+//   myContact.classList.remove('d-none');
+// });
