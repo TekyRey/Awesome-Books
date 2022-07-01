@@ -136,12 +136,4 @@ myHome.addEventListener('click', (e) => {
   // myContact.classList.add('d-none');
 });
 
-// contactNavLink.addEventListener('click', (e) => {
-//   e.preventDefault();
-//   contactNavLink.classList.add('active');
-//   myForm.classList.add('d-none');
-//   myList.classList.remove('active');
-//   myBookList.classList.add('d-none');
-//   newBook.classList.remove('active');
-//   myContact.classList.remove('d-none');
-// });
+myForm.classList.add('d-none');
