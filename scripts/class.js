@@ -102,8 +102,8 @@ const myForm = document.getElementById('myForm');
 const myBookList = document.getElementById('bookList');
 const myList = document.getElementById('list');
 const myHome = document.getElementById('home');
-// const myContact = document.getElementById('myContact');
-// const contactNavLink = document.getElementById('contactNavLink');
+const myContact = document.getElementById('contacts');
+const contactNavLink = document.getElementById('contactNavLi');
 
 // add event listener to the remove button
 newBook.addEventListener('click', (e) => {
@@ -112,8 +112,8 @@ newBook.addEventListener('click', (e) => {
   newBook.classList.add('active');
   myList.classList.remove('active');
   myBookList.classList.add('d-none');
-  // contactNavLink.classList.remove('active');
-  // myContact.classList.add('d-none');
+  contactNavLink.classList.remove('active');
+  myContact.classList.add('d-none');
 });
 
 myList.addEventListener('click', (e) => {
@@ -122,8 +122,8 @@ myList.addEventListener('click', (e) => {
   myForm.classList.add('d-none');
   myBookList.classList.remove('d-none');
   newBook.classList.remove('active');
-  // contactNavLink.classList.remove('active');
-  // myContact.classList.add('d-none');
+  contactNavLink.classList.remove('active');
+  myContact.classList.add('d-none');
 });
 
 myHome.addEventListener('click', (e) => {
@@ -132,8 +132,19 @@ myHome.addEventListener('click', (e) => {
   myForm.classList.add('d-none');
   myBookList.classList.remove('d-none');
   newBook.classList.remove('active');
-  // contactNavLink.classList.remove('active');
-  // myContact.classList.add('d-none');
+  contactNavLink.classList.remove('active');
+  myContact.classList.add('d-none');
+});
+
+contactNavLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  contactNavLink.classList.add('active');
+  myForm.classList.add('d-none');
+  myList.classList.remove('active');
+  myBookList.classList.add('d-none');
+  newBook.classList.remove('active');
+  myContact.classList.remove('d-none');
 });
 
 myForm.classList.add('d-none');
+myContact.classList.add('d-none');
