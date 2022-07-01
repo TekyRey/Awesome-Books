@@ -92,4 +92,8 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
 
   Book.removeBook(e.target.parentElement.previousElementSibling.textContent);
 });
+
+const d = new Date();
+// const n = d.getFullYear();
+document.getElementById('current_date').innerHTML = d;
 // add event listener to the remove button
