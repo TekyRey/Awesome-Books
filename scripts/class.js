@@ -89,10 +89,6 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
 });
 
 const d = new Date();
-<<<<<<< HEAD
-
-=======
->>>>>>> 06e15213a48bb43a8241ee3a92974eba1f5bd41e
 document.getElementById('current_date').innerHTML = d;
 
 const newBook = document.getElementById('newbookLi');
