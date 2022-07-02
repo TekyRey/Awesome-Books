@@ -3,8 +3,6 @@ const bookTitle = document.querySelector('#title');
 const bookAuthor = document.querySelector('#author');
 const booksList = document.querySelector('#book-list');
 
-// create a class book with add remove add display methods
-
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -18,9 +16,7 @@ class Book {
     }
 
     const obj = JSON.parse(localStorage.getItem('books'));
-    // set obj to empty
     obj.allbook = [];
-    // push new book to obj
 
     if (this.title.value !== '' && this.author.value !== '') {
       obj.allbook.push({
@@ -75,7 +71,6 @@ function display() {
             `;
   });
 }
-// add event listener to the form
 bookForm.addEventListener('submit', (e) => {
   e.preventDefault();
   const newBook = new Book(bookTitle.value, bookAuthor.value);
@@ -94,7 +89,10 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
 });
 
 const d = new Date();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 06e15213a48bb43a8241ee3a92974eba1f5bd41e
 document.getElementById('current_date').innerHTML = d;
 
 const newBook = document.getElementById('newbookLi');
@@ -105,7 +103,6 @@ const myHome = document.getElementById('home');
 const myContact = document.getElementById('contacts');
 const contactNavLink = document.getElementById('contactNavLi');
 
-// add event listener to the remove button
 newBook.addEventListener('click', (e) => {
   e.preventDefault();
   myForm.classList.remove('d-none');
