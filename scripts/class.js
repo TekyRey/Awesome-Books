@@ -94,7 +94,7 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
 });
 
 const d = new Date();
-// const n = d.getFullYear();
+
 document.getElementById('current_date').innerHTML = d;
 
 const newBook = document.getElementById('newbookLi');
