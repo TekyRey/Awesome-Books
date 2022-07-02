@@ -15,7 +15,6 @@ class Book {
     }
 
     const obj = JSON.parse(localStorage.getItem('books'));
-    obj.allbook = [];
 
     if (this.title.value !== '' && this.author.value !== '') {
       obj.allbook.push({
@@ -28,7 +27,17 @@ class Book {
 
   static deleteBook(el) {
     if (el.classList.contains('delete')) {
+      const text = el.parentElement.parentElement.firstChild.innerText.split('.')[0];
       el.parentElement.parentElement.remove();
+      // Added code to remove
+      const obj = JSON.parse(localStorage.getItem('books'));
+      const books = { allbook: [] };
+      obj.allbook.forEach((el) => {
+        if (`"${el.title}` !== text) {
+          books.allbook.push(el);
+        }
+      });
+      localStorage.setItem('books', JSON.stringify(books));
     }
   }
 
@@ -52,9 +61,11 @@ class Book {
 function display() {
   const obj = JSON.parse(localStorage.getItem('books'));
   if (obj !== undefined) {
+    // Added below and added a fullstop to separate title
+    booksList.innerHTML = '';
     obj.allbook.forEach((item) => {
       booksList.innerHTML += `
-            <td>${'"'}${item.title}${'"'}${' '}${'By'}${' '}${item.author}</td>
+            <td>${'"'}${item.title}${'."'}${' '}${'By'}${' '}${item.author}</td>
         <td><a href="#" class="btn btn-danger btn-sm delete">Remove</a></td>
             `;
     });
@@ -128,3 +139,5 @@ contactNavLink.addEventListener('click', (e) => {
 
 myForm.classList.add('d-none');
 myContact.classList.add('d-none');
+// Added for display on refresh
+window.onload = display();
